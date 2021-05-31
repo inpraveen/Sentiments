@@ -1,0 +1,869 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13BB0C8AFE865EDF8361DD11 /* Pods_Sentiments_SentimentsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69BA02179043DEF95E1650DD /* Pods_Sentiments_SentimentsUITests.framework */; };
+		67F44D3E8EAF38AA635C0B5B /* Pods_Sentiments.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F927AA97663F948E0C32DA36 /* Pods_Sentiments.framework */; };
+		90BBECA53E9A78D0CE8F71CC /* Pods_SentimentsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0087DD57243D4B1510F7CA0 /* Pods_SentimentsTests.framework */; };
+		EAB017262664C8E100A64094 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB017252664C8E100A64094 /* AppDelegate.swift */; };
+		EAB017282664C8E100A64094 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB017272664C8E100A64094 /* SceneDelegate.swift */; };
+		EAB0172A2664C8E100A64094 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB017292664C8E100A64094 /* ViewController.swift */; };
+		EAB0172D2664C8E100A64094 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB0172B2664C8E100A64094 /* Main.storyboard */; };
+		EAB0172F2664C8E300A64094 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAB0172E2664C8E300A64094 /* Assets.xcassets */; };
+		EAB017322664C8E300A64094 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB017302664C8E300A64094 /* LaunchScreen.storyboard */; };
+		EAB0173D2664C8E300A64094 /* SentimentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB0173C2664C8E300A64094 /* SentimentsTests.swift */; };
+		EAB017482664C8E400A64094 /* SentimentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB017472664C8E400A64094 /* SentimentsUITests.swift */; };
+		EAB017862664CA5C00A64094 /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB017762664CA5300A64094 /* SwifteriOS.framework */; };
+		EAB017872664CA5C00A64094 /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EAB017762664CA5300A64094 /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EAB017A22664CB9900A64094 /* TweetSentimentClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EAB017A12664CB9900A64094 /* TweetSentimentClassifier.mlmodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAB017392664C8E300A64094 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAB0171A2664C8E100A64094 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAB017212664C8E100A64094;
+			remoteInfo = Sentiments;
+		};
+		EAB017442664C8E400A64094 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAB0171A2664C8E100A64094 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAB017212664C8E100A64094;
+			remoteInfo = Sentiments;
+		};
+		EAB017752664CA5300A64094 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAB0176D2664CA5300A64094 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F50EE1944A5AB00894629;
+			remoteInfo = SwifteriOS;
+		};
+		EAB017772664CA5300A64094 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAB0176D2664CA5300A64094 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F51131944A61D00894629;
+			remoteInfo = SwifterMac;
+		};
+		EAB017792664CA5300A64094 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAB0176D2664CA5300A64094 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C1F1944AA1A00993175;
+			remoteInfo = SwifterDemoiOS;
+		};
+		EAB0177B2664CA5300A64094 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAB0176D2664CA5300A64094 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C471944AECB00993175;
+			remoteInfo = SwifterDemoMac;
+		};
+		EAB0177D2664CA5300A64094 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAB0176D2664CA5300A64094 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6B4D5751C7BAC4500E06514;
+			remoteInfo = SwifterTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EAB017882664CA5C00A64094 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EAB017872664CA5C00A64094 /* SwifteriOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		075C878339FC67C1B7D85439 /* Pods-Sentiments-SentimentsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sentiments-SentimentsUITests.debug.xcconfig"; path = "Target Support Files/Pods-Sentiments-SentimentsUITests/Pods-Sentiments-SentimentsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1A3D21653C344AA8F2546EB5 /* Pods-SentimentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SentimentsTests.release.xcconfig"; path = "Target Support Files/Pods-SentimentsTests/Pods-SentimentsTests.release.xcconfig"; sourceTree = "<group>"; };
+		61250C3752F2B61F06D938F5 /* Pods-Sentiments.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sentiments.release.xcconfig"; path = "Target Support Files/Pods-Sentiments/Pods-Sentiments.release.xcconfig"; sourceTree = "<group>"; };
+		69BA02179043DEF95E1650DD /* Pods_Sentiments_SentimentsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sentiments_SentimentsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		744E1A0FA6C39D9391E4760D /* Pods-Sentiments.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sentiments.debug.xcconfig"; path = "Target Support Files/Pods-Sentiments/Pods-Sentiments.debug.xcconfig"; sourceTree = "<group>"; };
+		B2A89F8961F57BDF84FE6163 /* Pods-Sentiments-SentimentsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sentiments-SentimentsUITests.release.xcconfig"; path = "Target Support Files/Pods-Sentiments-SentimentsUITests/Pods-Sentiments-SentimentsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EAB017222664C8E100A64094 /* Sentiments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sentiments.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAB017252664C8E100A64094 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EAB017272664C8E100A64094 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EAB017292664C8E100A64094 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EAB0172C2664C8E100A64094 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EAB0172E2664C8E300A64094 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAB017312664C8E300A64094 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EAB017332664C8E300A64094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAB017382664C8E300A64094 /* SentimentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SentimentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAB0173C2664C8E300A64094 /* SentimentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentimentsTests.swift; sourceTree = "<group>"; };
+		EAB0173E2664C8E300A64094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAB017432664C8E400A64094 /* SentimentsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SentimentsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAB017472664C8E400A64094 /* SentimentsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentimentsUITests.swift; sourceTree = "<group>"; };
+		EAB017492664C8E400A64094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAB0176D2664CA5300A64094 /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = "../../../Downloads/Swifter-master/Swifter.xcodeproj"; sourceTree = "<group>"; };
+		EAB017A12664CB9900A64094 /* TweetSentimentClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = TweetSentimentClassifier.mlmodel; path = ../../../../Downloads/TweetSentimentClassifier.mlmodel; sourceTree = "<group>"; };
+		F0087DD57243D4B1510F7CA0 /* Pods_SentimentsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SentimentsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5BD337BA65C7B33ED527B89 /* Pods-SentimentsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SentimentsTests.debug.xcconfig"; path = "Target Support Files/Pods-SentimentsTests/Pods-SentimentsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F927AA97663F948E0C32DA36 /* Pods_Sentiments.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sentiments.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAB0171F2664C8E100A64094 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAB017862664CA5C00A64094 /* SwifteriOS.framework in Frameworks */,
+				67F44D3E8EAF38AA635C0B5B /* Pods_Sentiments.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAB017352664C8E300A64094 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90BBECA53E9A78D0CE8F71CC /* Pods_SentimentsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAB017402664C8E400A64094 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13BB0C8AFE865EDF8361DD11 /* Pods_Sentiments_SentimentsUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EAB017192664C8E100A64094 = {
+			isa = PBXGroup;
+			children = (
+				EAB0176D2664CA5300A64094 /* Swifter.xcodeproj */,
+				EAB017242664C8E100A64094 /* Sentiments */,
+				EAB0173B2664C8E300A64094 /* SentimentsTests */,
+				EAB017462664C8E400A64094 /* SentimentsUITests */,
+				EAB017232664C8E100A64094 /* Products */,
+				EAB017852664CA5C00A64094 /* Frameworks */,
+				F57F80E26350B23F7ACEE3DD /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		EAB017232664C8E100A64094 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAB017222664C8E100A64094 /* Sentiments.app */,
+				EAB017382664C8E300A64094 /* SentimentsTests.xctest */,
+				EAB017432664C8E400A64094 /* SentimentsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAB017242664C8E100A64094 /* Sentiments */ = {
+			isa = PBXGroup;
+			children = (
+				EAB017A12664CB9900A64094 /* TweetSentimentClassifier.mlmodel */,
+				EAB017252664C8E100A64094 /* AppDelegate.swift */,
+				EAB017272664C8E100A64094 /* SceneDelegate.swift */,
+				EAB017292664C8E100A64094 /* ViewController.swift */,
+				EAB0172B2664C8E100A64094 /* Main.storyboard */,
+				EAB0172E2664C8E300A64094 /* Assets.xcassets */,
+				EAB017302664C8E300A64094 /* LaunchScreen.storyboard */,
+				EAB017332664C8E300A64094 /* Info.plist */,
+			);
+			path = Sentiments;
+			sourceTree = "<group>";
+		};
+		EAB0173B2664C8E300A64094 /* SentimentsTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAB0173C2664C8E300A64094 /* SentimentsTests.swift */,
+				EAB0173E2664C8E300A64094 /* Info.plist */,
+			);
+			path = SentimentsTests;
+			sourceTree = "<group>";
+		};
+		EAB017462664C8E400A64094 /* SentimentsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EAB017472664C8E400A64094 /* SentimentsUITests.swift */,
+				EAB017492664C8E400A64094 /* Info.plist */,
+			);
+			path = SentimentsUITests;
+			sourceTree = "<group>";
+		};
+		EAB0176E2664CA5300A64094 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAB017762664CA5300A64094 /* SwifteriOS.framework */,
+				EAB017782664CA5300A64094 /* SwifterMac.framework */,
+				EAB0177A2664CA5300A64094 /* SwifterDemoiOS.app */,
+				EAB0177C2664CA5300A64094 /* SwifterDemoMac.app */,
+				EAB0177E2664CA5300A64094 /* SwifterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAB017852664CA5C00A64094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F927AA97663F948E0C32DA36 /* Pods_Sentiments.framework */,
+				69BA02179043DEF95E1650DD /* Pods_Sentiments_SentimentsUITests.framework */,
+				F0087DD57243D4B1510F7CA0 /* Pods_SentimentsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F57F80E26350B23F7ACEE3DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				744E1A0FA6C39D9391E4760D /* Pods-Sentiments.debug.xcconfig */,
+				61250C3752F2B61F06D938F5 /* Pods-Sentiments.release.xcconfig */,
+				075C878339FC67C1B7D85439 /* Pods-Sentiments-SentimentsUITests.debug.xcconfig */,
+				B2A89F8961F57BDF84FE6163 /* Pods-Sentiments-SentimentsUITests.release.xcconfig */,
+				F5BD337BA65C7B33ED527B89 /* Pods-SentimentsTests.debug.xcconfig */,
+				1A3D21653C344AA8F2546EB5 /* Pods-SentimentsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAB017212664C8E100A64094 /* Sentiments */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAB0174C2664C8E400A64094 /* Build configuration list for PBXNativeTarget "Sentiments" */;
+			buildPhases = (
+				7786A7ADBC6CE201786FEBFB /* [CP] Check Pods Manifest.lock */,
+				EAB0171E2664C8E100A64094 /* Sources */,
+				EAB0171F2664C8E100A64094 /* Frameworks */,
+				EAB017202664C8E100A64094 /* Resources */,
+				EAB017882664CA5C00A64094 /* Embed Frameworks */,
+				EB597C90D574059725BEC6D8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sentiments;
+			productName = Sentiments;
+			productReference = EAB017222664C8E100A64094 /* Sentiments.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAB017372664C8E300A64094 /* SentimentsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAB0174F2664C8E400A64094 /* Build configuration list for PBXNativeTarget "SentimentsTests" */;
+			buildPhases = (
+				1BBBB3A06662415A830409E0 /* [CP] Check Pods Manifest.lock */,
+				EAB017342664C8E300A64094 /* Sources */,
+				EAB017352664C8E300A64094 /* Frameworks */,
+				EAB017362664C8E300A64094 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAB0173A2664C8E300A64094 /* PBXTargetDependency */,
+			);
+			name = SentimentsTests;
+			productName = SentimentsTests;
+			productReference = EAB017382664C8E300A64094 /* SentimentsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EAB017422664C8E400A64094 /* SentimentsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAB017522664C8E400A64094 /* Build configuration list for PBXNativeTarget "SentimentsUITests" */;
+			buildPhases = (
+				4FDB62C6ABFD15C7B2F2721E /* [CP] Check Pods Manifest.lock */,
+				EAB0173F2664C8E400A64094 /* Sources */,
+				EAB017402664C8E400A64094 /* Frameworks */,
+				EAB017412664C8E400A64094 /* Resources */,
+				880A3EFA2EE35F366D80935A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAB017452664C8E400A64094 /* PBXTargetDependency */,
+			);
+			name = SentimentsUITests;
+			productName = SentimentsUITests;
+			productReference = EAB017432664C8E400A64094 /* SentimentsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAB0171A2664C8E100A64094 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					EAB017212664C8E100A64094 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					EAB017372664C8E300A64094 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = EAB017212664C8E100A64094;
+					};
+					EAB017422664C8E400A64094 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = EAB017212664C8E100A64094;
+					};
+				};
+			};
+			buildConfigurationList = EAB0171D2664C8E100A64094 /* Build configuration list for PBXProject "Sentiments" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAB017192664C8E100A64094;
+			productRefGroup = EAB017232664C8E100A64094 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EAB0176E2664CA5300A64094 /* Products */;
+					ProjectRef = EAB0176D2664CA5300A64094 /* Swifter.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				EAB017212664C8E100A64094 /* Sentiments */,
+				EAB017372664C8E300A64094 /* SentimentsTests */,
+				EAB017422664C8E400A64094 /* SentimentsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EAB017762664CA5300A64094 /* SwifteriOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifteriOS.framework;
+			remoteRef = EAB017752664CA5300A64094 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EAB017782664CA5300A64094 /* SwifterMac.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifterMac.framework;
+			remoteRef = EAB017772664CA5300A64094 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EAB0177A2664CA5300A64094 /* SwifterDemoiOS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoiOS.app;
+			remoteRef = EAB017792664CA5300A64094 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EAB0177C2664CA5300A64094 /* SwifterDemoMac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoMac.app;
+			remoteRef = EAB0177B2664CA5300A64094 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EAB0177E2664CA5300A64094 /* SwifterTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwifterTests.xctest;
+			remoteRef = EAB0177D2664CA5300A64094 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAB017202664C8E100A64094 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAB017322664C8E300A64094 /* LaunchScreen.storyboard in Resources */,
+				EAB0172F2664C8E300A64094 /* Assets.xcassets in Resources */,
+				EAB0172D2664C8E100A64094 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAB017362664C8E300A64094 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAB017412664C8E400A64094 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BBBB3A06662415A830409E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SentimentsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FDB62C6ABFD15C7B2F2721E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sentiments-SentimentsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7786A7ADBC6CE201786FEBFB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sentiments-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		880A3EFA2EE35F366D80935A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sentiments-SentimentsUITests/Pods-Sentiments-SentimentsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sentiments-SentimentsUITests/Pods-Sentiments-SentimentsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sentiments-SentimentsUITests/Pods-Sentiments-SentimentsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB597C90D574059725BEC6D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sentiments/Pods-Sentiments-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sentiments/Pods-Sentiments-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sentiments/Pods-Sentiments-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAB0171E2664C8E100A64094 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAB0172A2664C8E100A64094 /* ViewController.swift in Sources */,
+				EAB017262664C8E100A64094 /* AppDelegate.swift in Sources */,
+				EAB017A22664CB9900A64094 /* TweetSentimentClassifier.mlmodel in Sources */,
+				EAB017282664C8E100A64094 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAB017342664C8E300A64094 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAB0173D2664C8E300A64094 /* SentimentsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAB0173F2664C8E400A64094 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAB017482664C8E400A64094 /* SentimentsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAB0173A2664C8E300A64094 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAB017212664C8E100A64094 /* Sentiments */;
+			targetProxy = EAB017392664C8E300A64094 /* PBXContainerItemProxy */;
+		};
+		EAB017452664C8E400A64094 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAB017212664C8E100A64094 /* Sentiments */;
+			targetProxy = EAB017442664C8E400A64094 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EAB0172B2664C8E100A64094 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAB0172C2664C8E100A64094 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EAB017302664C8E300A64094 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAB017312664C8E300A64094 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAB0174A2664C8E400A64094 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EAB0174B2664C8E400A64094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAB0174D2664C8E400A64094 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 744E1A0FA6C39D9391E4760D /* Pods-Sentiments.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZYPF8447WZ;
+				INFOPLIST_FILE = Sentiments/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wfx.Sentiments;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EAB0174E2664C8E400A64094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61250C3752F2B61F06D938F5 /* Pods-Sentiments.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZYPF8447WZ;
+				INFOPLIST_FILE = Sentiments/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wfx.Sentiments;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EAB017502664C8E400A64094 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5BD337BA65C7B33ED527B89 /* Pods-SentimentsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZYPF8447WZ;
+				INFOPLIST_FILE = SentimentsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wfx.SentimentsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sentiments.app/Sentiments";
+			};
+			name = Debug;
+		};
+		EAB017512664C8E400A64094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A3D21653C344AA8F2546EB5 /* Pods-SentimentsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZYPF8447WZ;
+				INFOPLIST_FILE = SentimentsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wfx.SentimentsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sentiments.app/Sentiments";
+			};
+			name = Release;
+		};
+		EAB017532664C8E400A64094 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 075C878339FC67C1B7D85439 /* Pods-Sentiments-SentimentsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZYPF8447WZ;
+				INFOPLIST_FILE = SentimentsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wfx.SentimentsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Sentiments;
+			};
+			name = Debug;
+		};
+		EAB017542664C8E400A64094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2A89F8961F57BDF84FE6163 /* Pods-Sentiments-SentimentsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZYPF8447WZ;
+				INFOPLIST_FILE = SentimentsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wfx.SentimentsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Sentiments;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAB0171D2664C8E100A64094 /* Build configuration list for PBXProject "Sentiments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAB0174A2664C8E400A64094 /* Debug */,
+				EAB0174B2664C8E400A64094 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAB0174C2664C8E400A64094 /* Build configuration list for PBXNativeTarget "Sentiments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAB0174D2664C8E400A64094 /* Debug */,
+				EAB0174E2664C8E400A64094 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAB0174F2664C8E400A64094 /* Build configuration list for PBXNativeTarget "SentimentsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAB017502664C8E400A64094 /* Debug */,
+				EAB017512664C8E400A64094 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAB017522664C8E400A64094 /* Build configuration list for PBXNativeTarget "SentimentsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAB017532664C8E400A64094 /* Debug */,
+				EAB017542664C8E400A64094 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAB0171A2664C8E100A64094 /* Project object */;
+}
